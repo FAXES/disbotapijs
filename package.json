@@ -1,0 +1,23 @@
+{
+  "name": "disbotapi",
+  "version": "1.0.0",
+  "description": "The disbot.top Discord.Js API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAXES/disbotapijs.git"
+  },
+  "keywords": [
+    "discord.js",
+    "disbot"
+  ],
+  "author": "FAXES",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAXES/disbotapijs/issues"
+  },
+  "homepage": "https://github.com/FAXES/disbotapijs#readme"
+}
