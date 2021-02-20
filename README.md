@@ -22,24 +22,14 @@ You can POST Server and Shard Count stats once every 5 minutes
 
 ---
 
-## Response
-
-**429:**
-`[disbot - 429]: You are currently rate limited. You can only make one request per five minutes.`
-
-**200:**
-`[disbot - 200]: OK.`
-
----
-
 
 ## Updating Server Count
 
 ```js
 const disbotapi = require("disbotapi")
-const disbot = new disbotapi(client.user.id, "bot-auth-token")
 
 client.on("ready", () => {
+    const disbot = new disbotapi(client.user.id, "bot-auth-token")
     setInterval(() => {
         disbot.updateStats(client.guilds.cache.size)
     }, 300000)
