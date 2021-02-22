@@ -1,6 +1,6 @@
 {
   "name": "disbotapi",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The disbot.top Discord.Js API.",
   "main": "index.js",
   "scripts": {
