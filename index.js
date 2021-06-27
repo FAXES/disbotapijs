@@ -1,9 +1,10 @@
 const fetch = require("node-fetch");
 
 class disbot {
-    constructor(botId, authToken) {
+    constructor(botId, authToken, debug) {
         this.botId = botId;
         this.authToken = authToken;
+        this.debug = debug;
     }
     async updateStats(serverCount){
         if(serverCount < 0) return console.log(`A servercount must be supplied.`)
@@ -12,7 +13,11 @@ class disbot {
             method: 'POST',
             body: body,
             headers: {'Content-Type': 'application/x-www-form-urlencoded', 'authorization': this.authToken},
-        }).then(async (res) => {console.log(await res.json())})
+        }).then(async (res) => {
+            if(this.debug) {
+                console.log(await res.json())
+            }
+        })
     }
 } 
 
